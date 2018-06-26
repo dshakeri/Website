@@ -1,0 +1,68 @@
+body {
+    background-size: cover;
+    background-position: left; 
+    background-attachment: fixed;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "Lato";
+    color: white;
+}
+
+.navbar-inverse {
+      background: #2c3e50;
+      color: white;
+}
+.navbar-inverse .navbar-brand, .navbar-inverse a{
+  color:white;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+} 
+
+.title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 5em;
+    font-family: 'Times New Roman', serif;
+    padding-bottom: 2%;
+}
+
+.menuBlock{
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+.menuItem {
+    color: white;
+    font-size: 300%;
+    font-family: 'Times New Roman', serif;
+    border-bottom-style: groove;
+    border-bottom-width: thin;
+    line-height: 1.5em;
+    padding-bottom: 5px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+    padding-right: 10px;
+    line-height: 200%;
+    letter-spacing: 2px;
+    padding-left: 0px;
+    padding-top: 0px ;
+    height: 100%;
+}
+
+.menuItem:hover {
+    color: #CEBDA9;
+    text-decoration: none;
+}
+
+.numerics {
+    padding-left: 70%;
+    font-family: 'Times New Roman', serif;
+    padding-top: 16px;
+
+}
