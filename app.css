@@ -44,17 +44,19 @@ html {
 }
 
 #portfolioTitle {
-    text-align: left;
     font-weight: 400;
     font-size: 5em;
     font-family: 'Times New Roman', serif;
-    padding-left: 10%
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+
 }
 
-#aboutMeText {
-    text-align: center;
+#text {
     font-family: Roboto, Arial, "Helvetica Neue", Helvetica, sans-serif;
-    padding-top: 5%;    
+    padding-top: 2%; 
+    text-align: justify;   
 }
 
 #buttons {
@@ -76,10 +78,18 @@ html {
 }
 
 .image {
-    max-width: 80%;
-    height: auto;
+    height: 342px;
+    width: 360px;
     padding-left: 5%;
+    overflow: hidden;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
   }
+
+.image:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%); 
+}
 
 .resumeImage {
     max-width: 80%;
@@ -116,10 +126,37 @@ html {
   opacity: 1;
 }
 
-.text {
+.documentContainer {
+}
+
+.hoverText {
   color: black;
   font-size: 25px;
   text-align: center;
+  padding-left: 15%;
+}
+
+.portfolioTextContainer {
+}
+
+.rightSide {
+    padding-right: 7.5%;
+    text-align: right;
+}
+
+.leftSide {
+    padding-left: 7.5%;
+    text-align: left;
+}
+
+.portfolioRow {
+    display: table;
+}
+
+.cell {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
 }
 
 hr {
