@@ -1,10 +1,12 @@
 body {
-    background: url(https://images.pexels.com/photos/89786/cup-of-coffee-laptop-office-macbook-89786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background: url(https://images.unsplash.com/photo-1480204514067-6b10af53a827?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a78e72b7ec7ae1008860068f69c1065b&auto=format&fit=crop&w=1489&q=80);
+  
+   // background: url(https://images.unsplash.com/photo-1526062316359-870159813355?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8ba3ea4075a0bce542a6e92dcb00b29f&auto=format&fit=crop&w=1567&q=80);
+  
     background-size: cover;
     background-position: left; 
     background-attachment: fixed;
     font-family: 'Times New Roman', serif;
-
 }
 
 body,
@@ -15,16 +17,39 @@ html {
     color: white;
 }
 
+:root {
+    --background-1:#485670;
+    --background-2:#151A24;
+    --accent-color-1:#C6A33B;
+    --accent-color-2:#FF533D;
+    --title-color:white;
+    --resume-border: #C6A33B;
+    --resume-diamond:#FF533D;
+}
+
+:root {
+    --background-1:#3E434D;
+    --background-2:#053250;
+    --accent-color-1:#D7A14C;
+    --accent-color-2:#FF533D;
+    --title-color:white;
+    --resume-border: #D7A14C;
+    --resume-diamond:#FF533D;
+}
+
+
+
+
 .navbar-inverse {
       background: transparent;
       color: white;
       border-color: transparent;
 }
 .navbar-inverse .navbar-brand, .navbar-inverse a{
-  color: #D84830;
+  color: var(--accent-color-1);
 }
 .navbar-inverse .navbar-nav>li>a {
-  color: #D84830;
+  color: var(--accent-color-1);
 } 
 
 #title {
@@ -41,6 +66,8 @@ html {
     font-weight: 700;
     font-size: 5em;
     font-family: 'Times New Roman', serif;
+    color: var(--title-color);
+
 }
 
 #portfolioTitle {
@@ -64,15 +91,15 @@ html {
 }
 
 .whiteSection { 
-    background: white;
-    color: black;
+    background: var(--background-2);
+    color: white ;
     padding-top: 3%;
     padding-bottom: 5%;
 }
 
 .blackSection { 
-    background: black;
-    color: white;
+    background: var(--background-1);
+    color: white ;
     padding-top: 3%;
     padding-bottom: 5%;
 }
@@ -88,7 +115,7 @@ html {
   }
 
 .emptySection {
-    padding-top: 3%
+    padding-top: 6%
 }
 
 .navbar-fixed-top.scrolled {
@@ -193,17 +220,16 @@ html {
 }
 
 .btn-send {
-    background: #D84830;
+    background: var(--accent-color-2);
     color: white;
-    border-color: #D84830;
+    border-color: var(--accent-color-2);
 }
 
 hr {
-    border-top: 1px solid #D84830;
+    border-top: 1px solid var(--accent-color-2);
     border-radius: 7px 7px 7px 7px;
     margin-bottom: 3%;
     margin-top: 3%;
-
 }
 
 img { 
@@ -222,9 +248,9 @@ img {
  }
 .form-control::-webkit-input-placeholder { color: black; }  /* WebKit, Blink, Edge */
 .form-control:-moz-placeholder { color: black; }  /* Mozilla Firefox 4 to 18 */
-.form-control::-moz-placeholder { color: #D84830; }  /* Mozilla Firefox 19+ */
-.form-control:-ms-input-placeholder { color: #D84830; }  /* Internet Explorer 10-11 */
-.form-control::-ms-input-placeholder { color: #D84830; }  /* Microsoft Edge */
+.form-control::-moz-placeholder { color: var(--accent-color-2); }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: var(--accent-color-2); }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: var(--accent-color-2); }  /* Microsoft Edge */
 
 
 .mrkayo-main-title {
@@ -292,6 +318,8 @@ img {
   right: 9px;
   font-weight: 600;
   letter-spacing: 0.7px;
+  text-align: center;
+
 }
 .education-workHistory .timeline-title i {
   font-size: 30px;
@@ -315,7 +343,7 @@ img {
   top: 0;
   height: 100%;
   width: 11px;
-  border: 3px solid darkgrey;
+  border: 3px solid var(--resume-border);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
@@ -329,7 +357,7 @@ img {
   margin-bottom: 0;
 }
 .education-workHistory .timeline-content .timeline-box .timeline-date {
-  border: 3px solid darkgrey;
+  border: 3px solid var(--resume-border);
   box-sizing: content-box;
   display: inline-block;
   padding: 6px 12px;
@@ -349,13 +377,13 @@ img {
   position: absolute;
   width: 15px;
   height: 15px;
-  border: 3px solid #D84830;
-  background-color: #D84830;
+  border: 3px solid var(--resume-diamond));
+  background-color: var(--resume-diamond);
   transform: rotate(45deg);
   left: -2px;
 }
 .education-workHistory .timeline-content .timeline-box .timeline-info {
-  border: 3px solid darkgrey;
+  border: 3px solid var(--resume-border);
   padding: 20px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -366,7 +394,7 @@ img {
 .education-workHistory .timeline-content .timeline-box .timeline-info .timeline-info-header {
   padding-bottom: 15px;
   margin-bottom: 15px;
-  border-bottom: 1px solid darkgrey;
+  border-bottom: 1px solid var(--resume-border);
 }
 .education-workHistory .timeline-content .timeline-box .timeline-info .timeline-info-header h3 {
   font-size: 16px;
@@ -391,48 +419,10 @@ img {
   text-align: center;
 }
 
-.kayo-icon-list-box {
-  text-align: center;
-  position: relative;
-  padding-top: 60px;
-}
-.kayo-icon-list-box .kayo-icon-box-container {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-.kayo-icon-list-box .kayo-list-info {
-  padding: 60px 15px 15px;
-  overflow: hidden;
-  -webkit-transition: all 0.25s ease-in-out 0s;
-  -moz-transition: all 0.25s ease-in-out 0s;
-  -o-transition: all 0.25s ease-in-out 0s;
-  -ms-transition: all 0.25s ease-in-out 0s;
-  transition: all 0.25s ease-in-out 0s;
-}
-.kayo-icon-list-box .kayo-list-info h4 {
-  font-size: 16px;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
-  margin: 20px 0 13px;
-  font-weight: 600;
-}
-.kayo-icon-list-box .kayo-list-info p {
-  margin-bottom: 0;
-  font-size: 14px;
-  letter-spacing: 0.7px;
-  line-height: 24px;
-  font-weight: 300;
-  opacity: 0;
-  -webkit-transition: all 0.25s ease-in-out 0s;
-  -moz-transition: all 0.25s ease-in-out 0s;
-  -o-transition: all 0.25s ease-in-out 0s;
-  -ms-transition: all 0.25s ease-in-out 0s;
-  transition: all 0.25s ease-in-out 0s;
-  position: relative;
-  top: 50px;
-}
-.kayo-icon-list-box:hover .kayo-list-info p {
-  opacity: 1;
-  top: 0;
-}
+colors: 
+navy blue #18121E
+Silk #DCD0C0
+Paper #F4F4F4
+Charcoal #373737 
+
+
