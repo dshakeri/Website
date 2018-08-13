@@ -1,4 +1,3 @@
-console.log("this is actually pretty cool")
 
 $(function () {
   $(document).scroll(function () {

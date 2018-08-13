@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Laurel Trinidad</title>
+	<title>Laurelann Trinidad</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="app.css">
+	<?php include('contact.php'); ?>
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -18,7 +19,7 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-				<a href="#" class="navbar-brand">Laurel Trinidad</a>
+				<a href="#" class="navbar-brand">Laurelann Trinidad</a>
 			</div>
 			<div class="collapse navbar-collapse" id="bs-nav-demo">
 				
@@ -34,21 +35,23 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12" id="title">
-				<h1>My Words+Your Voice=Content That Sells</h1>
+				<h1 id="titleName">Laurelann Trinidad</h1>
+				<hr id="hrTitle">
+				<h2>Technical Writer</h2>
 			</div>
 		</div>
 	</div>
 	<div class="blackSection" id="about">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4" >
-					<img src="https://scontent.fsea1-1.fna.fbcdn.net/v/t1.0-9/18342608_10210631293112837_7009004719831180003_n.jpg?_nc_cat=0&oh=eb962426b6025424225a80eff569fae0&oe=5B779674&_nc_o2e=za9008616&efg=eyJhZG1pc3Npb25fY29udHJvbCI6MSwidXBsb2FkZXJfaWQiOiIxMDYyODEwMjcwIn0%3D">	
+				<div class="col-sm-12 col-md-4" >
+					<img src="./Images/AboutMe_opt.jpg" class="aboutMePhoto img-responsive">	
 				</div>
-				<div class="col-sm-8" >
+				<div class="col-sm-12 col-md-8" >
 					<div class="row">
 						<div class="col-sm-12">
 							<h1 id="sectionTitle">About Me</h1>
-							<hr>
+							<hr class='divider'>
 						</div>
 						<div class="col-sm-12" id="text">
 							<span>Clear, concise, and effective communication. It's why I adore writing. Putting the final period at the end of well-crafted content is more satisfying to me than finding a perfectly ripe avocado the same afternoon I plan to make guacamole. <br><br>
@@ -67,50 +70,44 @@
             <div class="row">
 				<div class="col-sm-12">
 					<h1 id="sectionTitle">Resume</h1>
-					<hr>
+					<hr class='divider'>
 				</div>
 			</div>
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-12 col-md-6">
                     <div class="kayo-education">
                         <h3 class="timeline-title">
-                            <i class="pe-7s-study"></i> <span>Education</span>
+                            <i class="pe-7s-study"></i> <span class="resumeTitle">Education</span>
                         </h3>
                         <div class="timeline-content">
                             <div class="timeline-box">
                                 <div class="timeline-date">
-                                    1990 - 1994
+                                    2013 - 2014
                                 </div>
                                 <div class="timeline-info">
                                     <div class="timeline-info-header">
-                                        <h3>Harvard University</h3>
-                                        <p>B.A. and M.S., Computer Science</p>
+                                        <h3>Stanford University</h3>
+                                        <p>Masters of Science, Civil and Evironmental Engineering</p>
                                     </div>
                                     <div class="timeline-info-details">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi
-                                            earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum
-                                            totam voluptas voluptates. Excepturi fugiat nobis reprehenderit sequi
-                                            veniam!
+                                            Stanford’s Master’s Program in Construction Management emphasizes management techniques useful in organizing, planning, and controlling the activities of diverse subcontractors and stakeholders. The program places a heavy emphasis on communication, with courses focused on writing and producing various technical documentation as well as courses focused on public speaking and presentation. 
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="timeline-box">
                                 <div class="timeline-date">
-                                    2015 - 2016
+                                    2010 - 2013
                                 </div>
                                 <div class="timeline-info">
                                     <div class="timeline-info-header">
-                                        <h3>Helwan University</h3>
-                                        <p>Bachelor Degree</p>
+                                        <h3>Stanford University</h3>
+                                        <p>Bachelors of Science, Civil and Evironmental Engineering</p>
                                     </div>
                                     <div class="timeline-info-details">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi
-                                            earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum
-                                            totam voluptas voluptates. Excepturi fugiat nobis reprehenderit sequi
-                                            veniam!
+                                            Stanford’s Architectural Design program integrates design and engineering with a focus on cutting-edge technologies. The program includes a broad range of coursework and aims to prepare students for a diversity of careers. Courses in studio practicum, math, science, and writing all place heavy emphasis on innovation, collaboration, and effective communication. 
                                         </p>
                                     </div>
                                 </div>
@@ -118,46 +115,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-12 col-md-6">
                     <div class="kayo-experience">
                         <h3 class="timeline-title">
-                            <i class="pe-7s-ribbon"></i> <span>Work History</span>
+                            <i class="pe-7s-ribbon"></i> <span class="resumeTitle">Work History</span>
                         </h3>
                         <div class="timeline-content">
-                            <div class="timeline-box">
+                        	<div class="timeline-box">
                                 <div class="timeline-date">
-                                    2007 - 2016
+                                    2015 - 2017
                                 </div>
                                 <div class="timeline-info">
                                     <div class="timeline-info-header">
-                                        <h3>Facebook</h3>
-                                        <p>UX/UI Designer</p>
+                                        <h3>Sellen Construction</h3>
+                                        <p>Project Engineer</p>
                                     </div>
                                     <div class="timeline-info-details">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi
-                                            earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum
-                                            totam voluptas voluptates. Excepturi fugiat nobis reprehenderit sequi
-                                            veniam!
+                                            I coordinate project participants from various trades and collaborate with subject matter experts on my team to produce creative solutions to project challenges. I design and create a wide range of technical content for the benefit of varied user groups and for incorporation into the contract documents. I work to distill complex project concepts into simplified action plans, graphics, and guides to ensure mutual understanding across trades.  
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="timeline-box">
                                 <div class="timeline-date">
-                                    2017
+                                    2014 - 2015
                                 </div>
                                 <div class="timeline-info">
                                     <div class="timeline-info-header">
-                                        <h3>Envato</h3>
-                                        <p>UX/UI Designer</p>
+                                        <h3>The Allen Group, LLC</h3>
+                                        <p>Office Engineer</p>
                                     </div>
                                     <div class="timeline-info-details">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi
-                                            earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum
-                                            totam voluptas voluptates. Excepturi fugiat nobis reprehenderit sequi
-                                            veniam!
+                                            I designed, wrote, and edited proposals for large public works projects by studying client requests and communications in order to identify client concerns and project objectives. I interviewed subject matter experts on my team to gather information for incorporation into the proposals and I integrated technical data into friendly prose aimed at creating a cohesive story with a consistent voice that answers the "big picture."
                                         </p>
                                     </div>
                                 </div>
@@ -167,7 +158,7 @@
                 </div>
             </div>
             <div class="take-my-resume">
-                <a href="#" class="kayo-btn-1"><span class="glyphicon glyphicon-cloud-download"></span> Take My Resume</a>
+                <a href="https://drive.google.com/file/d/1qi--PrtE-KaoUedRnO8xosm_DVgz2o6B/view?usp=sharing" class="kayo-btn-1"><span class="glyphicon glyphicon-cloud-download"></span> Take My Resume</a>
             </div>
         </div>
     </div>
@@ -179,77 +170,77 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<h1 id="sectionTitle">Portfolio</h1>
-					<hr>
+					<hr class='divider'>
 				</div>
-				<div class="col-sm-4 documentContainer">
+				<div class="col-sm-6 col-lg-4 documentContainer">
 					<a href="https://drive.google.com/file/d/1-I8CJ9ruxqZEkAIx4mUurq1qyC3e59em/view?usp=sharing" target="_blank">
-				        <img src="./Images/airport.jpg" alt="" class="portfolioImage img-responsive">
+				        <img src="./Images/airport.jpg" alt="" class="mobile-colorOn portfolioImage img-responsive">
 				        
-				        <div class="imgTitle">
-				        	<h1>Title</h1>
+				        <div class="mobile-opacityOn imgTitle">
+				        	<h1 id="logo">SFO Request For Proposal</h1>
 				        </div>
-				        <div class="caption text-center">
-				            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quisquam?</p>
+				        <div class="mobile-opacityOn caption  text-center">
+				            <p>This proposal won a $92 million contract with SFO Airport. I wrote many sections independently and interviewed subject matter experts on my team to incorporate their input. </p>
 				        </div>
 				    </a>
 			    </div>
-				<div class="col-sm-4 documentContainer">
-					<a href="https://drive.google.com/file/d/1-I8CJ9ruxqZEkAIx4mUurq1qyC3e59em/view?usp=sharing" target="_blank">
-				        <img src="./Images/business.jpg" alt="" class="portfolioImage img-responsive">
+				<div class="col-sm-6 col-lg-4 documentContainer">
+					<a href="https://drive.google.com/file/d/1WHfksMKq87AFRdgjbVN4JwheQS30bQ3Y/view?usp=sharing" target="_blank">
+				        <img src="./Images/business.jpg" alt="" class="mobile-colorOn portfolioImage img-responsive">
 				        
-				        <div class="imgTitle">
-				        	<h1>Title</h1>
+				        <div class="mobile-opacityOn imgTitle">
+				        	<h1 id="logo">SFO Response to City Audit</h1>
 				        </div>
-				        <div class="caption text-center">
-				            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quisquam?</p>
+				        <div class="mobile-opacityOn caption text-center">
+				            <p>The final city audit report included the Airport’s response to findings. My project manager wrote the first draft, which I edited and revised for publication. Full report at sfocontroller.org.</p>
 				        </div>
 				    </a>
 			    </div>
-				<div class="col-sm-4 documentContainer">
-					<a href="https://drive.google.com/file/d/1-I8CJ9ruxqZEkAIx4mUurq1qyC3e59em/view?usp=sharing" target="_blank">
-				        <img src="./Images/workshop.jpg" alt="" class="portfolioImage img-responsive">
+				<div class="col-sm-6 col-lg-4 documentContainer">
+					<a href="https://drive.google.com/file/d/1QTNc07VurYdecpEk-6FCTMQW4oYf8vDR/view?usp=sharing" target="_blank">
+				        <img src="./Images/workshop.jpg" alt="" class="mobile-colorOn portfolioImage img-responsive">
 				        
-				        <div class="imgTitle">
-				        	<h1>Title</h1>
+				        <div class="mobile-opacityOn imgTitle">
+				        	<h1 id="logo">Request For Information</h1>
 				        </div>
-				        <div class="caption text-center">
-				            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quisquam?</p>
+				        <div class="mobile-opacityOn caption text-center">
+				            <p>Engineers in construction coordinate multiple subcontractors to ensure proper execution of the design. I wrote this Request for Information to document required design modifications.</p>
 				        </div>
 				    </a>
 			    </div>
-				<div class="col-sm-4 documentContainer">
-					<a href="https://drive.google.com/file/d/1-I8CJ9ruxqZEkAIx4mUurq1qyC3e59em/view?usp=sharing" target="_blank">
-				        <img src="./Images/sunrise.jpg" alt="" class="portfolioImage img-responsive">
+				<div class="col-sm-6 col-lg-4 documentContainer">
+					<a href="https://drive.google.com/file/d/1YXVFcSv1G0qrcS3iBd8k6fEmQf0LfzrA/view?usp=sharing" target="_blank">
+				        <img src="./Images/sunrise.jpg" alt="" class="mobile-colorOn portfolioImage img-responsive">
 				        
-				        <div class="imgTitle">
-				        	<h1>Title</h1>
+				        <div class="mobile-opacityOn imgTitle">
+				        	<h1 id="logo">RFI Flow Chart</h1>
 				        </div>
-				        <div class="caption text-center">
-				            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quisquam?</p>
+				        <div class="mobile-opacityOn caption text-center">
+				            <p>I designed this chart to document the RFI process. It’s intended to clarify the function of different software programs used and to help onboard new teammates.</p>
 				        </div>
 				    </a>
 			    </div>
-				<div class="col-sm-4 documentContainer">
-					<a href="https://drive.google.com/file/d/1-I8CJ9ruxqZEkAIx4mUurq1qyC3e59em/view?usp=sharing" target="_blank">
-				        <img src="./Images/los-angeles.jpg" alt="" class="portfolioImage img-responsive img-rounded">
+				<div class="col-sm-6 col-lg-4 documentContainer">
+					<a href="https://drive.google.com/file/d/1Z5ZuiUidr9W8h78Ot1lnW3CpGqctrZVb/view?usp=sharing" target="_blank">
+				        <img src="./Images/los-angeles.jpg" alt="" class="mobile-colorOn portfolioImage img-responsive img-rounded">
 				        
-				        <div class="imgTitle">
-				        	<h1>Title</h1>
+				        <div class="mobile-opacityOn imgTitle">
+				        	<h1 id="logo">Notes on LA</h1>
 				        </div>
-				        <div class="caption text-center">
-				            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quisquam?</p>
+				        <div class="mobile-opacityOn caption text-center">
+				            <p>As a native Angeleno, I created this reference guide for Los Angeles newbies. It’s a great city, but there’s some practical, less glamorous aspects people forget about the City of Angels.</p>
 				        </div>
 				    </a>
 			    </div>
-				<div class="col-sm-4 documentContainer">
-					<a href="https://drive.google.com/file/d/1-I8CJ9ruxqZEkAIx4mUurq1qyC3e59em/view?usp=sharing" target="_blank">
-				        <img src="./Images/home.jpg" alt="" class="portfolioImage img-responsive img-rounded">
+				<div class="col-sm-6 col-lg-4 documentContainer">
+					<a href="https://drive.google.com/file/d/0B9tU89xsXLWpVlFKR2hSOGVlX1czckJoUkxkdVJTTm5vYi1F/view?usp=sharing" target="_blank">
+				        <img src="./Images/home.jpg" alt="" class="mobile-colorOn portfolioImage img-responsive img-rounded">
 				        
-				        <div class="imgTitle">
-				        	<h1>Title</h1>
+				        <div class="mobile-opacityOn imgTitle">
+				        	<h1 id="logo">2111 E John St</h1>
 				        </div>
-				        <div class="caption text-center">
-				            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quisquam?</p>
+				        <div class="mobile-opacityOn caption text-center">
+				            <p>The Seattle housing market is brutal. I wrote this letter to accompany our offer on a beautiful condo. I researched the seller and mentioned several common interests in the hopes of winning her over.</p>
 				        </div>
 				    </a>
 			    </div>
@@ -259,11 +250,81 @@
 	<div class="emptySection"></div>
 	<section id="contactMe">
 		<div class="whiteSection">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
+	        <div class="container mb_-30px">
+	            <div class="mrkayo-main-title">
+	                <h2>
+	                    Get In Touch
+	                    <span class="kayo-line"></span>
+	                </h2>
+	            </div>
+	            <div class="row">
+	                <div class="col-sm-4">
+	                    <div class="kayo-icon-list-box">
+	                        <div class="kayo-icon-box-container">
+	                            <div class="kayo-icon-box">
+	                                <span class="glyphicon glyphicon-map-marker kayo-icon"></span>
+	                            </div>
+	                        </div>
+	                        <div class="kayo-list-info">
+	                            <h4>Location</h4>
+	                            <p>
+	                                Los Angeles, USA
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-sm-4">
+	                    <div class="kayo-icon-list-box">
+	                        <div class="kayo-icon-box-container">
+	                            <div class="kayo-icon-box">
+	                                <span class="glyphicon glyphicon-phone kayo-icon"></span>
+	                            </div>
+	                        </div>
+	                        <div class="kayo-list-info">
+	                            <h4>Phone</h4>
+	                            <p>
+	                                +123 654 78900
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-sm-4">
+	                    <div class="kayo-icon-list-box">
+	                        <div class="kayo-icon-box-container">
+	                            <div class="kayo-icon-box">
+	                                <span class="fa fa-envelope kayo-icon"></span>
+	                            </div>
+	                        </div>
+	                        <div class="kayo-list-info">
+	                            <h4>Email</h4>
+	                            <p>
+	                                kayo@example.com
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+        	</div>
+		</div>
+	</section>
+	<div class="emptySection"></div>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+ <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+					<!--<div class="col-sm-12">
 						<h1 id="sectionTitle">Contact Me</h1>
-						<hr>
+						<hr class='divider'>
 					</div>
 					<div class="col-sm-2"></div>
 
@@ -278,13 +339,13 @@
 	                            <div class="row">
 	                                <div class="col-md-6">
 	                                    <div class="form-group">
-	                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="First name *" required="required" data-error="Firstname is required.">
+	                                        <input id="form_name" type="text" name="realname" class="form-control" placeholder="Name *" required="required" data-error="Name is required.">
 	                                        <div class="help-block with-errors"></div>
 	                                    </div>
 	                                </div>
 	                                <div class="col-md-6">
 	                                    <div class="form-group">
-	                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Last name *" required="required" data-error="Lastname is required.">
+	                                        <input id="form_lastname" type="text" name="subject" class="form-control" placeholder="Subject *" required="required" data-error="Subject is required.">
 	                                        <div class="help-block with-errors"></div>
 	                                    </div>
 	                                </div>
@@ -306,7 +367,7 @@
 	                            <div class="row">
 	                                <div class="col-md-12">
 	                                    <div class="form-group">
-	                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+	                                        <textarea id="form_message" name="body" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
 	                                        <div class="help-block with-errors"></div>
 	                                    </div>
 	                                </div>
@@ -315,16 +376,4 @@
 	                                </div>
 	                            </div>
 	                        </div>
-	                    </form>
-                	</div>
-				</div>
-			</div>
-		</div>
-	</section>
- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
- <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
- <script type="text/javascript" src="script.js"></script>
-
-
-</body>
-</html>
+	                    </form>-->
